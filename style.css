@@ -96,11 +96,12 @@ h1 {
   gap: 20px;
 }
 .hero {
+  height: 90vh;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   display: flex;
-  padding: 50px 0px;
+  padding: 10px 0px;
   margin: auto;
   background-color: #e2fbf5;
 }
@@ -110,7 +111,7 @@ h1 {
   justify-content: flex-start;
   align-items: center;
   gap: 20px;
-  width: min-content;
+  width: 50vw;
 }
 
 .tagline {
@@ -121,7 +122,6 @@ h1 {
 
 .tagline span {
   font-size: 32px;
-  display: inline-block;
   opacity: 0;
 }
 
@@ -249,6 +249,7 @@ h1 {
   .nav-links {
     display: none;
   }
+
   header {
     padding: 6px 30px;
   }
@@ -272,18 +273,6 @@ h1 {
     text-decoration: none;
   }
 
-  .burger {
-    display: none;
-    cursor: pointer;
-  }
-
-  .burger div {
-    width: 1.5625rem;
-    height: 0.375rem;
-    background-color: #fff;
-    margin: 0.3125rem;
-  }
-
   .MAIT-LOGO {
     width: 3rem;
     height: 2.6rem;
@@ -292,17 +281,6 @@ h1 {
   .Contact-Us-Button {
     display: none;
   }
-
-  @keyframes slideUp {
-    0% {
-      opacity: 0;
-      transform: translateY(50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
   .container {
     display: flex;
     flex-direction: column;
@@ -310,6 +288,7 @@ h1 {
   }
 
   .hero {
+    height: max-content;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -354,7 +333,6 @@ h1 {
 
   .radio-buttons {
     margin-top: -10px;
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -381,35 +359,232 @@ h1 {
   .Categories-Dropdown {
     padding: 6px 12px;
     height: 42px;
-    width:33vw;
+    width: 33vw;
     align-self: center;
   }
 
   .stat-item {
-    display: flex;
     flex-wrap: wrap;
     height: 70px;
     flex-direction: column;
     justify-content: center;
     font-size: 12px;
     padding: 10px 22px;
-    color: #231651;
     width: fit-content;
     text-align: center;
-    border-radius: 1rem;
-  }
-
-  .stat-item p,
-  .stat-item h3 {
-    margin: 0rem;
   }
 
   .Hero-image {
-    height: 200px;
+    height: 220px;
     width: 60vw;
   }
 
   .tagline {
-    margin-left: 15px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .stats {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .Search-Icon {
+    background-color: #231651;
+    padding: 1rem;
+    height: 12px;
+    width: 12px;
+    border-radius: 0rem 4rem 4rem 0rem;
+  }
+  .nav-links {
+    display: none;
+  }
+
+  header {
+    padding: 6px 30px;
+  }
+
+  /* HERO SECTION */
+
+  /* NAVIGATION BAR  */
+
+  .nav-links a:hover {
+    font-weight: 900;
+  }
+
+  .nav-links li {
+    padding: 0 1rem;
+  }
+
+  .nav-links a {
+    font-weight: 450;
+    font-size: 12px;
+    color: #000000;
+    text-decoration: none;
+  }
+
+  .MAIT-LOGO {
+    width: 3rem;
+    height: 2.6rem;
+  }
+
+  .Contact-Us-Button {
+    display: none;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 10px 0px;
+    margin: auto;
+    height: fit-content;
+    background-color: #e2fbf5;
+  }
+
+  .hero-content-left {
+    padding: 30px 0px 30px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: min-content;
+  }
+
+  .tagline span {
+    font-size: 14px;
+    text-align: center;
+    margin: auto;
+    opacity: 0;
+  }
+
+  .Main-Heading-Mait-Journals {
+    color: #2e3193;
+    font-weight: 900;
+  }
+
+  h1 {
+    width: auto;
+    color: #546297;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .radio-buttons input[type="radio"]:checked {
+    border-color: #000000;
+    background-color: #2e3193; /* Set the inner color to #2e3193 */
+  }
+
+  .radio-buttons {
+    margin-top: -10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .Search-Bar-Input {
+    padding: 6px 12px;
+    height: 30px;
+    width: 30vw;
+    border-radius: 4rem 0rem 0rem 4rem;
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.361);
+  }
+
+  .search-bar {
+    justify-content: center;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 0rem;
+  }
+
+  .Categories-Dropdown {
+    padding: 6px 12px;
+    height: 42px;
+    width: 33vw;
+    align-self: center;
+  }
+
+  .stat-item {
+    flex-wrap: wrap;
+    height: 70px;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12px;
+    padding: 10px 22px;
+    width: fit-content;
+    text-align: center;
+  }
+
+  .Hero-image {
+    height: 220px;
+    width: 40vw;
+  }
+
+  .tagline {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero-content-left {
+    width: 50vw;
+  }
+
+  .tagline span {
+    font-size: 22px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .Search-Bar-Input {
+    width: 200px;
+  }
+
+  .Categories-Dropdown {
+    width: 130px;
+  }
+
+  .Hero-image {
+    width: 32vw;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hero-content-left {
+    width: 50vw;
+  }
+
+  .tagline span {
+    font-size: 22px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .Search-Bar-Input {
+    width: 200px;
+  }
+
+  .Categories-Dropdown {
+    width: 130px;
+  }
+
+  .Hero-image {
+    width: 32vw;
   }
 }
