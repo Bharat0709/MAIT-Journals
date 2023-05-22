@@ -405,11 +405,11 @@ h1 {
   }
 
   .Hero-image {
-    height: 180px;
+    height: 200px;
     width: 60vw;
   }
 
   .tagline {
-    margin-left: 13px;
+    margin-left: 15px;
   }
 }
