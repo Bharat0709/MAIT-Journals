@@ -294,7 +294,7 @@ h1 {
 }
 
 .journal-title {
-  width: 30vw;
+  width: fit-content;
   font-size: 14px;
   font-weight: bold;
 }
@@ -551,7 +551,7 @@ h1 {
     font-size: 10px;
   }
   .journal-title {
-    width: 30vw;
+    width: fit-content;
     font-size: 10px;
     font-weight: bold;
   }
