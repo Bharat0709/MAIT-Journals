@@ -1,0 +1,237 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  color: #fff;
+  padding: 0.3rem 2rem;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1{
+  width: fit-content;
+}
+/* HERO SECTION */
+
+/* NAVIGATION BAR  */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links a:hover {
+  font-weight: 900;
+}
+
+.nav-links li {
+  padding: 0 1.25rem;
+}
+
+.nav-links a {
+  font-weight: 450;
+  font-size: 0.9rem;
+  color: #000000;
+  text-decoration: none;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 1.5625rem;
+  height: 0.375rem;
+  background-color: #fff;
+  margin: 0.3125rem;
+}
+
+.MAIT-LOGO {
+  width: 3.7rem;
+  height: 3.2rem;
+}
+
+.Contact-Us-Button {
+  padding: 0.6rem 1rem;
+  background-color: #231651;
+  color: white;
+  font-size: 0.8rem;
+  border-radius: 2rem;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero {
+  height: 90vh;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  padding: 0rem 7rem 0rem 7rem;
+  background-color: #e2fbf5;
+}
+
+.hero h1 {
+  width: 850px;
+}
+.tagline {
+  font-weight: 900;
+  position: relative;
+  animation: slideUp 0.5s ease-in-out forwards;
+}
+
+.tagline span {
+  font-size: 2rem;
+  display: inline-block;
+  opacity: 0;
+}
+
+.tagline span:nth-child(1) {
+  color: #37006f;
+  animation: slideUp 0.5s ease-in-out 1.5s forwards;
+}
+
+.tagline span:nth-child(2) {
+  color: #a40045;
+  animation: slideUp 0.5s ease-in-out 2s forwards;
+}
+
+.tagline span:nth-child(3) {
+  color: #2800b4;
+  animation: slideUp 0.5s ease-in-out 2.5s forwards;
+}
+.Main-Heading-Mait-Journals {
+  font-size: 3rem;
+  color: #2e3193;
+  font-weight: 900;
+}
+
+h1 {
+  color: #546297;
+  font-size: 2.8rem;
+}
+
+.radio-buttons input[type="radio"] {
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.radio-buttons input[type="radio"]:checked {
+  border-color: #000000;
+  background-color: #2e3193; /* Set the inner color to #2e3193 */
+}
+
+.radio-buttons {
+  margin-top: -1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.Search-Bar-Input {
+  padding: 0.3rem 1rem;
+  height: 2.4rem;
+  width: 26rem;
+  border-radius: 4rem 0rem 0rem 4rem;
+  border: none;
+  border-right: 1px solid rgba(0, 0, 0, 0.361);
+}
+
+.search-bar {
+  height: 1rem;
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 0rem;
+}
+
+.Categories-Dropdown {
+  padding: 0.3rem 1rem;
+  height: 3rem;
+  width: 12rem;
+  border: none !important;
+  border-radius: 0rem;
+  outline: none;
+  box-shadow: none;
+}
+
+.Search-Icon {
+  background-color: #231651;
+  padding: 1rem;
+  border-radius: 0rem 4rem 4rem 0rem;
+}
+
+.stats {
+  margin: 4rem 0rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin: 0.1rem;
+  background-color: #dee1f5;
+  padding: 0.9rem 1.4rem;
+  color: #231651;
+  width: fit-content;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.stat-item p,
+.stat-item h3 {
+  margin: 0rem;
+}
+
+.Hero-image{
+  width: 470px;
+}
+
+@media only screen and (max-width: 576px) {
+  .nav-links {
+    display: none;
+  }
+
+  .Hero-image{
+    display: none;
+  }
+
+
+}
