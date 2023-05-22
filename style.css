@@ -405,7 +405,8 @@ h1 {
   }
 
   .Hero-image {
-    display: none;
+    height: 180px;
+    width: 60vw;
   }
 
   .tagline {
