@@ -72,6 +72,10 @@ h1 {
   height: 3rem;
 }
 
+#Heading{
+  font-size: 44px;
+}
+
 .Contact-Us-Button {
   padding: 0.6rem 1rem;
   background-color: #231651;
@@ -231,7 +235,99 @@ h1 {
   width: 32vw;
 }
 
+/* Journals List */
+
+.Journals-List {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.filter-container {
+  flex-wrap: wrap;
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#Top-Reads,
+#Latest {
+  font-size: 22px;
+}
+
+.Below-Hero-Section {
+  display: flex;
+  gap: 12px;
+}
+
+#category {
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-left: 8px;
+  background-color: #2800b4;
+  color: white;
+}
+.Journals-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 30px;
+}
+
+.journal-card {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 22px;
+  background-color: #e2fbf5;
+  width: fit-content;
+  border-radius: 12px;
+}
+
+.journal-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.journal-title {
+  width: 30vw;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.View-Journal {
+  border-radius: 300px;
+  color: white;
+  background-color: #231651;
+  padding: 8px 24px;
+  border: none;
+  font-size: 12px;
+  width: fit-content;
+}
+
+.View-More {
+  background-color: #d3035a;
+  padding: 8px 24px;
+  font-weight: 300;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  width: fit-content;
+  align-self: center;
+  margin: 20px;
+  letter-spacing: 2px;
+  border-radius: 300px;
+}
+
 @media only screen and (max-width: 576px) {
+
+  #Heading{
+    font-size:22px;
+  }
   .stats {
     justify-content: center;
     display: flex;
@@ -326,11 +422,6 @@ h1 {
     text-align: center;
   }
 
-  .radio-buttons input[type="radio"]:checked {
-    border-color: #000000;
-    background-color: #2e3193; /* Set the inner color to #2e3193 */
-  }
-
   .radio-buttons {
     margin-top: -10px;
     flex-wrap: wrap;
@@ -382,9 +473,111 @@ h1 {
   .tagline {
     text-align: center;
   }
+
+  /*  */
+
+  .filter-container {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    justify-content: center;
+  }
+
+  #Top-Reads,
+  #Latest {
+    font-size: 22px;
+  }
+
+  .Below-Hero-Section {
+    display: flex;
+    gap: 20px;
+  }
+
+  #filter-categor {
+    text-align: center;
+  }
+
+  .category-filter {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
+  }
+  #category {
+    margin-left: 0px;
+    align-self: center;
+  }
+
+  #category {
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin-left: 8px;
+    background-color: #2800b4;
+    color: white;
+  }
+  .Journals-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 20px 20px;
+  }
+
+  .journal-card {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 20px;
+    background-color: #e2fbf5;
+    width: fit-content;
+    border-radius: 12px;
+  }
+
+  .journal-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .journal-info p {
+    font-size: 10px;
+  }
+
+  span {
+    font-weight: bold;
+    font-size: 10px;
+  }
+  .journal-title {
+    width: 30vw;
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .View-Journal {
+    border-radius: 300px;
+    color: white;
+    background-color: #231651;
+    padding: 6px 16px;
+    border: none;
+    font-size: 10px;
+    width: fit-content;
+  }
+
+  .View-More {
+    background-color: #d3035a;
+    padding: 8px 24px;
+    font-weight: 300;
+    text-align: center;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
+  #Heading{
+    font-size:22px;
+  }
   .stats {
     justify-content: center;
     display: flex;
@@ -534,6 +727,40 @@ h1 {
 
   .tagline {
     text-align: center;
+  }
+
+  .filter-container {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    justify-content: center;
+  }
+
+  #Top-Reads,
+  #Latest {
+    font-size: 22px;
+  }
+
+  .Below-Hero-Section {
+    display: flex;
+    gap: 20px;
+  }
+
+  #filter-categor {
+    text-align: center;
+  }
+
+  .category-filter {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
+  }
+  #category {
+    margin-left: 0px;
+    align-self: center;
   }
 }
 
