@@ -371,6 +371,163 @@ h1 {
   width: fit-content;
 }
 
+.carousel-container {
+  position: relative;
+  left: 12%;
+  width: 900px; /* Adjust as needed */
+  height: 300px; /* Adjust as needed */
+  overflow: hidden;
+}
+
+.carousel {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  margin: 0 10px;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.center-item {
+  opacity: 1;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+}
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  right: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prev-button,
+.next-button {
+  color: #ffffff;
+  border-radius: 200px;
+  background-color: #231651;
+  border: none;
+  padding: 5px 12px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.image-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#Detail-0,
+#Detail-1,
+#Detail-3,
+#Detail-4 {
+  display: none;
+}
+
+.Board-Members-Header {
+  text-align: center;
+}
+
+.Board-Members {
+  background-color: #e2fbf5;
+  padding: 40px 50px;
+}
+
+.image-details p {
+  width: 500px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Contact us */
+
+.contact {
+  padding: 50px 50px 0px 50px;
+  font-size: 32px;
+}
+
+.Contect-Us {
+  display: flex;
+  padding: 0px 50px 30px 50px;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+.Mobile-Number {
+  font-weight: bold;
+}
+.Number-Digits {
+  font-size: 14px;
+}
+.Contact-us-Left-Section {
+  width: 400px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.College-Contacts {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 12px 16px;
+  background-color: #e2fbf5;
+  /* width: fit-content; */
+  border-radius: 12px;
+}
+
+.Contact-us-Right-Section {
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #e2fbf5;
+}
+
+.Name,
+.E-mail,
+.Message {
+  border: none;
+  border-radius: 6px;
+  padding: 18px;
+  margin: 12px;
+}
+.Name,
+.E-mail {
+  width: 30vw;
+}
+
+.Message {
+  width: 60vw;
+  height: 11vh;
+}
+
+.Bottom {
+  text-align: center;
+  padding: 16px;
+  font-weight: 400;
+  background-color: #231651;
+  color: white;
+}
+
+#Contact-Us-Submit {
+  margin: 20px 0px 10px 20px;
+}
 
 @media only screen and (max-width: 576px) {
   #Heading {
@@ -621,8 +778,8 @@ h1 {
     text-align: center;
   }
 
-  .SubmitImage{
-    height:32vh;
+  .SubmitImage {
+    height: 32vh;
   }
 
   .Benefits {
@@ -636,8 +793,44 @@ h1 {
     font-size: 12px;
     align-self: center;
   }
-}
 
+  .Contect-Us {
+    display: flex;
+    padding: 0px 20px 30px 20px;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .Contact-us-Right-Section {
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .Name,
+  .E-mail,
+  .Message {
+    border: none;
+    border-radius: 6px;
+    padding: 18px;
+    margin: 8px;
+  }
+  .Name,
+  .E-mail {
+    width: 60vw;
+  }
+
+  .Name{
+    margin-top: 20px;
+  }
+
+  .contact,.SendMessage{
+    text-align: center;
+  }
+}
 
 @media (min-width: 576px) and (max-width: 767px) {
   #Heading {
@@ -827,6 +1020,14 @@ h1 {
     margin-left: 0px;
     align-self: center;
   }
+  .Contect-Us {
+    display: flex;
+    padding: 0px 50px 30px 50px;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -852,6 +1053,15 @@ h1 {
 
   .Hero-image {
     width: 32vw;
+  }
+
+  .Contect-Us {
+    display: flex;
+    padding: 0px 20px 30px 20px;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }
 
