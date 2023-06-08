@@ -365,8 +365,10 @@ h1 {
   border-radius: 300px;
   color: white;
   background-color: #231651;
+  cursor: pointer;
   padding: 8px 24px;
   border: none;
+  margin-top: 30px;
   font-size: 14px;
   width: fit-content;
 }
@@ -504,7 +506,7 @@ h1 {
 .Message {
   border: none;
   border-radius: 6px;
-  padding: 18px;
+  padding: 12px;
   margin: 12px;
 }
 .Name,
@@ -792,6 +794,7 @@ h1 {
   .Submit-Button {
     font-size: 12px;
     align-self: center;
+    cursor: pointer;
   }
 
   .Contect-Us {
@@ -809,7 +812,7 @@ h1 {
     flex-direction: column;
     padding: 20px;
   }
-  
+
   .Name,
   .E-mail,
   .Message {
@@ -823,11 +826,12 @@ h1 {
     width: 60vw;
   }
 
-  .Name{
+  .Name {
     margin-top: 20px;
   }
 
-  .contact,.SendMessage{
+  .contact,
+  .SendMessage {
     text-align: center;
   }
 }
@@ -864,6 +868,7 @@ h1 {
 
   .nav-links a:hover {
     font-weight: 900;
+    cursor: pointer;
   }
 
   .nav-links li {
