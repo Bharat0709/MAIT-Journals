@@ -10,6 +10,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init("A239UswrjaZz8l97Y");
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function () {
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            // generate a five digit number for the contact_number variable
+            this.contact_number.value = (Math.random() * 100000) | 0;
+            // these IDs from the previous steps
+            emailjs.sendForm("service_e4hydm9", "template_3nsni0b", this).then(
+              function () {
+                alert("SUCCESS!");
+              },
+              function (error) {
+                alert("FAILED...", error);
+              }
+            );
+          });
+      };
+    </script>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Poppins:ital,wght@0,200;0,300;0,500;0,600;1,100;1,600&display=swap"
       rel="stylesheet"
@@ -123,85 +153,20 @@
           <label for="category" id="filter-category">Filter by Category:</label>
           <select id="category">
             <!-- <option value="">All</option> -->
-            <option value="civil">Computer Science</option>
-            <option value="mechanical">Mechanical Engineering</option>
-            <option value="electrical">Electrical Engineering</option>
-            <option value="computer">Computer Engineering</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Mechanical Engineering">
+              Mechanical Engineering
+            </option>
+            <option value="Electrical Engineering">
+              Electrical Engineering
+            </option>
+            <option value="Computer Engineering">Computer Engineering</option>
             <!-- Add more options for other branches as needed -->
           </select>
         </div>
       </div>
 
-      <section class="Journals-div">
-        <div class="journal-card">
-          <div class="journal-image">
-            <img
-              src="Images/Paper-1.png"
-              alt="Journal"
-              class="Journal-Preview-Image"
-            />
-          </div>
-          <div class="journal-info">
-            <p class="journal-title">
-              Augmenting Trust by Combining Machine Learning and Block Chain
-            </p>
-            <p class="author">Author: <span>Ashish Sharma</span></p>
-            <p class="publishingdate">Published on : <span>20-03-2023</span></p>
-            <button class="View-Journal">View</button>
-          </div>
-        </div>
-        <div class="journal-card">
-          <div class="journal-image">
-            <img
-              src="Images/Paper-1.png"
-              alt="Journal"
-              class="Journal-Preview-Image"
-            />
-          </div>
-          <div class="journal-info">
-            <p class="journal-title">
-              Augmenting Trust by Combining Machine Learning and Block Chain
-            </p>
-            <p class="author">Author: <span>Ashish Sharma</span></p>
-            <p class="publishingdate">Published on: <span>20-03-2023</span></p>
-            <button class="View-Journal">View</button>
-          </div>
-        </div>
-        <div class="journal-card">
-          <div class="journal-image">
-            <img
-              src="Images/Paper-1.png"
-              alt="Journal"
-              class="Journal-Preview-Image"
-            />
-          </div>
-          <div class="journal-info">
-            <p class="journal-title">
-              Augmenting Trust by Combining Machine Learning and Block Chain
-            </p>
-            <p class="author">Author: <span>Ashish Sharma</span></p>
-            <p class="publishingdate">Published on: <span>20-03-2023</span></p>
-            <button class="View-Journal">View</button>
-          </div>
-        </div>
-        <div class="journal-card">
-          <div class="journal-image">
-            <img
-              src="Images/Paper-1.png"
-              alt="Journal"
-              class="Journal-Preview-Image"
-            />
-          </div>
-          <div class="journal-info">
-            <p class="journal-title">
-              Augmenting Trust by Combining Machine Learning and Block Chain
-            </p>
-            <p class="author">Author: <span>Ashish Sharma</span></p>
-            <p class="publishingdate">Published on: <span>20-03-2023</span></p>
-            <button class="View-Journal">View</button>
-          </div>
-        </div>
-      </section>
+      <section class="Journals-div"></section>
 
       <a href="" class="View-More">View More</a>
     </section>
@@ -263,7 +228,7 @@
         <img src="Images/Submit Paper Image.png" alt="" class="SubmitImage" />
       </section>
     </section>
-<!-- 
+    <!-- 
     <section class="Board-Members">
       <h2 class="Board-Members-Header">Editorial Board Members</h2>
       <div class="carousel-container">
@@ -355,17 +320,26 @@
 
       <div class="Contact-us-Right-Section">
         <h2 class="SendMessage">Send Message</h2>
-        <input class="Name" type="text" placeholder="Name" />
-        <input class="E-mail" type="text" placeholder="Email Address" />
-        <input class="Message" type="text" placeholder="Message" />
-        <a href="" class="Submit-Button" id="Contact-Us-Submit">Submit</a>
+        <form id="contact-form">
+          <input type="hidden" name="contact_number" />
+          <div>
+          <label>Name</label>
+          <input class="Name" type="text" name="user_name" />
+        </div>
+          <label>Email</label>
+          <input class="E-mail" type="email" name="user_email" />
+          <div>
+          <label>Message</label>
+          <textarea class="Message" name="message"></textarea>
+        </div>
+          <input class="Submit-Button" type="submit" value="Send" />
+        </form>
       </div>
     </section>
 
     <p class="Bottom">
       Maharaja Agrasen Institute of Technology, New Delhi. All Rights Reserved .
     </p>
-
     <script src="script.js"></script>
   </body>
 </html>
