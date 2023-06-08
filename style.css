@@ -368,11 +368,25 @@ h1 {
   cursor: pointer;
   padding: 8px 24px;
   border: none;
-  margin-top: 30px;
+  margin-top:20px;
   font-size: 14px;
   width: fit-content;
 }
 
+#Label-Email{
+  margin-bottom: 20px;
+}
+
+#Label-Name{
+  margin-top: 20px;
+}
+
+
+#Label-Message{
+  display: flex;
+  /* align-items: center;  */
+  flex-direction: column;
+}
 .carousel-container {
   position: relative;
   left: 12%;
@@ -809,6 +823,7 @@ h1 {
   .Contact-us-Right-Section {
     border-radius: 6px;
     display: flex;
+    gap: 16px;
     flex-direction: column;
     padding: 20px;
   }
@@ -819,21 +834,19 @@ h1 {
     border: none;
     border-radius: 6px;
     padding: 18px;
-    margin: 8px;
+    margin: 12px;
   }
   .Name,
   .E-mail {
     width: 60vw;
   }
 
-  .Name {
-    margin-top: 20px;
-  }
 
   .contact,
   .SendMessage {
     text-align: center;
   }
+
 }
 
 @media (min-width: 576px) and (max-width: 767px) {

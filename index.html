@@ -322,14 +322,17 @@
         <h2 class="SendMessage">Send Message</h2>
         <form id="contact-form">
           <input type="hidden" name="contact_number" />
-          <div>
+          <div id="Label-Name">
           <label>Name</label>
           <input class="Name" type="text" name="user_name" />
         </div>
-          <label>Email</label>
+        <div id="Label-Email">
+          <label >Email</label>
           <input class="E-mail" type="email" name="user_email" />
-          <div>
-          <label>Message</label>
+          </div>
+
+          <div id="Label-Message">
+          <label >Message</label>
           <textarea class="Message" name="message"></textarea>
         </div>
           <input class="Submit-Button" type="submit" value="Send" />
